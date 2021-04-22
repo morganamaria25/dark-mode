@@ -20,13 +20,16 @@ function toggle() {
 // Here is to dark mode
 // ********************
 
+
 const body = document.querySelector("#containdarkmode");
 const mode = document.querySelector("#night");
 const color1 = document.querySelector("#pass");
 const color2 = document.querySelector("#cpf");
 
+
 mode.addEventListener("change", () => {
     body.classList.toggle("nightMode");
-    color1.className += "inputnight";
-    color2.className += "inputnight";
+    color1.classList.toggle("inputnight");
+    color2.classList.toggle("inputnight");
 });
+
